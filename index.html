@@ -8,6 +8,10 @@
     <link rel="icon" type="image/x-icon" href="imagesvh/vihayas1.PNG">
     <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 8451bcf511e691523466256d4ec5ffcaa1d66f66
 </head>
 <body>
     <header class="bg-secondary">
@@ -211,7 +215,11 @@
       <div class="container pt-3">
         <div class="row">
           <div class="col-md-6 p-4 text-white">
+<<<<<<< HEAD
             <form id="submit-form" action="">
+=======
+            <form id="submit-form"  action="">
+>>>>>>> 8451bcf511e691523466256d4ec5ffcaa1d66f66
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="fname">Name</label>
@@ -298,6 +306,7 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
  <script src="https://kit.fontawesome.com/8911d05be3.js" crossorigin="anonymous"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<<<<<<< HEAD
 
  <script>
   $("#submit-form").submit((e)=>{
@@ -315,6 +324,24 @@
           error:function (error){
               alert("Something Error")
 
+=======
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbw1aegAH1iPh7QOsHlC8ZUedVied-dWNZiYs7VnZEGfsrj94vrxKjk-j-uI9Sd_bUjl/exec",
+          url:"https://script.google.com/macros/s/AKfycbw1aegAH1iPh7QOsHlC8ZUedVied-dWNZiYs7VnZEGfsrj94vrxKjk-j-uI9Sd_bUjl/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
+
+>>>>>>> 8451bcf511e691523466256d4ec5ffcaa1d66f66
           }
       })
   })
